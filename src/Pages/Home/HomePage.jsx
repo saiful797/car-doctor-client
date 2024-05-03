@@ -1,4 +1,7 @@
 import { Helmet } from "react-helmet-async";
+import Banner from "./Banner/Banner";
+import Table from "./Table/Table";
+import About from "./About/About";
 
 
 const HomePage = () => {
@@ -7,8 +10,16 @@ const HomePage = () => {
             <Helmet>
                 <title>Car Doctor | Home</title>
             </Helmet>
-
-            <h1 className="text-3xl text center font-bold">Hello From Home page</h1>
+            <div>
+                <Banner />
+            </div>
+            
+            <div>
+                <About />
+            </div>
+            <div className="mt-10">
+                <Table/>
+            </div>
         </div>
     );
 };

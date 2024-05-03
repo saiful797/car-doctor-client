@@ -1,0 +1,23 @@
+.table-container {
+    overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+  }
+  
+  .responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .responsive-table th,
+  .responsive-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-table th,
+    .responsive-table td {
+      padding: 8px;
+    }
+  }
+  
